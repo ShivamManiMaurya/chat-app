@@ -14,19 +14,21 @@ import {
 import SearchIcon from "@mui/icons-material/Search";
 
 // local imports
-import { Some, padZero } from "../../helpers";
+import { Some, padZero } from "../../../helpers";
+import ChatListUser from "./ChatListUsers";
 
 const ChatList = () => {
   const handleSearch = () => {};
 
   return (
-    <Stack width={"26%"}>
+    <Stack width={"26%"} height={"100vh"}>
       <Stack
         display={"flex"}
         direction={"row"}
         justifyContent={"left"}
         alignItems={"center"}
-        p={2}>
+        px={2}
+        py={3}>
         <Typography pr={"0.5rem"}>Active Conversations</Typography>
         <Typography
           border={"1px solid lightgray"}
@@ -61,6 +63,7 @@ const ChatList = () => {
           placeholder="Search"
         />
       </FormControl>
+      <ChatListUser />
     </Stack>
   );
 };

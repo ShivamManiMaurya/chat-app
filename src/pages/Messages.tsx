@@ -1,6 +1,10 @@
-import { Stack } from "@mui/material";
 import React from "react";
-import { Sidebar, ChatList } from "../section/chat/index";
+
+// mui imports
+import { Divider, Stack } from "@mui/material";
+
+// local imports
+import { Sidebar, ChatList, Inbox } from "../section/chat/index";
 
 const Messages = () => {
   return (
@@ -10,8 +14,9 @@ const Messages = () => {
 
       {/* {chat list} */}
       <ChatList />
-
+      <Divider sx={{ width: "1px", color: "red", background: "	#e5e6eb" }} />
       {/* {inbox} */}
+      <Inbox />
     </Stack>
   );
 };
