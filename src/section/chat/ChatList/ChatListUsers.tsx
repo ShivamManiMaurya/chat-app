@@ -137,7 +137,7 @@ const ChatListUser = () => {
         },
       }}>
       {users.map((user) => (
-        <Stack px="1rem" py="0.5rem">
+        <Stack px="1rem" py="0.5rem" key={user.id}>
           <ButtonBase
             sx={{
               borderRadius: "0.5rem",
