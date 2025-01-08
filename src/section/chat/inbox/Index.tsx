@@ -5,16 +5,23 @@ import { Divider, Stack } from "@mui/material";
 
 // local imports
 import Header from "./Header";
-import Chats from "./Chats";
+import Chat from "./Chat";
 import Footer from "./Footer";
 
 const Index = () => {
   return (
-    <Stack width={"70%"}>
+    <Stack width={"70%"} height={"100vh"} boxShadow={2}>
       <Header />
       <Divider />
-      <Chats />
-
+      <Stack overflow={"auto"}>
+        <Chat isUser={false} />
+        <Chat isUser={true} />
+        <Chat isUser={false} />
+        <Chat isUser={true} />
+        <Chat isUser={true} />
+        <Chat isUser={false} /> <Chat isUser={true} />
+        <Chat isUser={false} />
+      </Stack>
       <Footer />
     </Stack>
   );

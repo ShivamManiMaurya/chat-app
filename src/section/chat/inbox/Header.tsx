@@ -3,8 +3,15 @@ import React from "react";
 // mui imports
 import { Avatar, IconButton, Stack, Typography } from "@mui/material";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
+import theme from "../../../theme";
 
 const Header = () => {
+  console.log(
+    "color = ",
+    theme.palette.mode === "dark" ? "#0000" : "#fff",
+    theme.palette.mode
+  );
+
   return (
     <Stack
       display={"flex"}
@@ -12,7 +19,8 @@ const Header = () => {
       justifyContent={"space-between"}
       alignItems={"center"}
       px={2}
-      py={1.7}>
+      py={1.7}
+      position={"sticky"}>
       <Stack
         display={"flex"}
         direction={"row"}

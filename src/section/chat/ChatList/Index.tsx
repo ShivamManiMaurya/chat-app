@@ -35,7 +35,8 @@ const ChatList = () => {
           pl={"0.2rem"}
           pr={"0.2rem"}
           borderRadius={"0.5rem"}
-          bgcolor={"	#f3f6f4"}>
+          bgcolor={"	#f3f6f4"}
+          color="gray">
           {padZero(7, 2)}
         </Typography>
       </Stack>

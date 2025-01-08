@@ -7,6 +7,7 @@ import { Avatar, ButtonBase, Stack, Typography } from "@mui/material";
 
 // local imports
 import { Some } from "../../../helpers";
+import theme from "../../../theme";
 
 const users = [
   {
@@ -144,6 +145,7 @@ const ChatListUser = () => {
               justifyContent: "left",
               "&:hover": {
                 background: "	#f3f6f4",
+                color: theme.palette.primary.light,
               },
             }}>
             <Stack
