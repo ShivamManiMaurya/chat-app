@@ -33,7 +33,7 @@ declare module "@mui/material/styles" {
 }
 
 const Messages = () => {
-  const [isDarkMode, setIsDarkMode] = useState(true);
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   const theme = createTheme({
     palette: {
